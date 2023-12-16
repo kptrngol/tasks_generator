@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <title>Activities_generator.</title>
+        <!-- <script src="testscript.js" defer></script> -->
+        <script src="main.js" defer></script>
+        <script src="test.js" defer></script>
+    </head>
+    <body>
+        <div class="navbar" data-example ="example-gener">
+            <p id="nav-title">Activities generator.</p>
+        </div>
+        <div>
+            <button class="generate-button">
+                Generate this week's activities.
+            </button>
+        </div>
+        <div style="display: flex;">
+            <div>
+                <select name="day-select" class="day-select">
+                    <option>Monday</option>
+                    <option>Tuesday</option>
+                    <option>Wednesday</option>
+                    <option>Thursday</option>
+                    <option>Friday</option>
+                    <option>Saturday</option>
+                    <option>Sunday</option>
+                </select>
+            </div>
+            <div>
+                <button style="margin-left: 0.5rem;" class="generate-button" id="pass-button">Activate a singular selection.</button>
+            </div>
+        </div>
+        <div class="checkbox-list" style="display: none;" style="display: flex;">
+            <form id="activitiesGroup">
+                <input type="checkbox" id="activ-1" name="activity-sel" value="learning how to code">
+                <label for="activ-1">learning how to code</label><br>
+                <input type="checkbox" id="activ-1" name="activity-sel" value="sports training activity">
+                <label for="activ-1">sports training activity</label><br>
+                <input type="checkbox" id="activ-1" name="activity-sel" value="learning music">
+                <label for="activ-1">learning music</label><br>
+                <input type="checkbox" id="activ-1" name="activity-sel" value="working on thesis">
+                <label for="activ-1">working on thesis</label><br>
+                <input type="checkbox" id="activ-1" name="activity-sel" value="statistics course">
+                <label for="activ-1">statistics course</label>
+            </form>
+            <button class="checkbox-list-confirm">Confirm selection for this day.</button>
+        </div>
+        <div class="frame">
+            <div class="day-segment">
+                <p>
+                    Monday
+                </p>
+                <div class="activity-segment">
+                    Activity: <p id="mon-activ">Generate new data set using the button above.</p>
+                </div>
+            </div>
+            <div class="day-segment">
+                <p>
+                    Tuesday
+                </p>
+                <div class="activity-segment">
+                    Activity: <p id="tue-activ">Generate new data set using the button above.</p>
+                </div>
+            </div>
+            <div class="day-segment">
+                <p>
+                    Wednesday
+                </p>
+                <div class="activity-segment">
+                    Activity: <p id="wed-activ">Generate new data set using the button above.</p>
+                </div>
+            </div>
+            <div class="day-segment">
+                <p>
+                    Thursday
+                </p>
+                <div class="activity-segment">
+                    Activity: <p id="thu-activ">Generate a new data set using the button above.</p>
+                </div>
+            </div>
+            <div class="day-segment">
+                <p>
+                    Friday
+                </p>
+                <div class="activity-segment">
+                    Activity: <p id="fri-activ">Generate new data set using the button above.</p>
+                </div>
+            </div>
+            <div class="day-segment">
+                <p style="color:whitesmoke">
+                    Saturday
+                </p>
+                <div class="activity-segment">
+                    Activity: <p id="sat-activ">Generate new data set using the button above.</p>
+                </div>
+            </div>
+            <div class="day-segment">
+                <p style="color:whitesmoke">
+                    Sunday
+                </p>
+                <div class="activity-segment">
+                    Activity: <p id="sun-activ">Generate new data set using the button above.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button id="CSV-generator"> <a id="CSV-anchor" href="objUrl" download="File.csv">
+                Generate CSV
+            </a></button>
+        </div>
+    </body>
+</html>
